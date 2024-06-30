@@ -8,12 +8,22 @@ import net.runelite.client.config.ConfigItem;
 public interface ExampleConfig extends Config
 {
 	@ConfigItem(
-		keyName = "greeting",
-		name = "Welcome Greeting",
-		description = "The message to show to the user when they login"
+			keyName = "showStamina",
+			name = "Show Stamina",
+			description = "Display stamina above player's head"
 	)
-	default String greeting()
+	default boolean showStamina()
 	{
-		return "Hello";
+		return true;
+	}
+
+	@ConfigItem(
+			keyName = "showPrayer",
+			name = "Show Prayer",
+			description = "Display prayer above player's head"
+	)
+	default boolean showPrayer()
+	{
+		return true;
 	}
 }
