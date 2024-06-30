@@ -1,2 +1,1 @@
-# Example
-An example greeter plugin
+Plugin to display stamina and prayer above a players head. In-progress. 
